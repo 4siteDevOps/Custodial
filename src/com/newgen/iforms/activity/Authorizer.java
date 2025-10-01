@@ -60,20 +60,6 @@ public class Authorizer extends Commons implements IFormServerEventHandler {
 			break;
 		}
 
-		case CustodialConstants.ADD_HISTORY: {
-			if (CustodialConstants.ADD_HISTORY_Q_DECISIONHISTORY.equalsIgnoreCase(sControlName)) {
-				String comments = getValue(ifrmObj, "Comments");
-
-				int i = saveDatainHistoryGrid(ifrmObj);
-				if (i <= 0) {
-					writeToLog.info("[Failed to insert into comments history. Comment: " + comments + "]");
-				} else {
-					writeToLog.info("[Inserted successfully in comments history. Comment: " + comments + "]");
-				}
-			}
-
-			break;
-		}
 
 		default:
 			writeToLog.info("[Unhandled server event]: " + pEventType);
