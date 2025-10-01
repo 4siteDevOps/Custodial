@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/cloning-1.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-fileupload-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/concurrent-1.3.4.jar"/>
+	<classpathentry kind="lib" path="lib/encoder-1.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/encryptiondecryption.jar"/>
+	<classpathentry kind="lib" path="lib/iforms.jar"/>
+	<classpathentry kind="lib" path="lib/iText-2.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/jai_imageio.jar"/>
+	<classpathentry kind="lib" path="lib/jcs-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/jsf-api-2.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/jsf-impl-2.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/jstl.jar"/>
+	<classpathentry kind="lib" path="lib/objenesis-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/standard-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/tomahawk-1.1.14.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.17.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.17.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar" sourcepath="C:/Users/vikas.prajapati/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-20180813.jar" sourcepath="C:/Users/vikas.prajapati/.m2/repository/org/json/json/20180813/json-20180813-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/OfflineIPRS.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

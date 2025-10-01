@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Appender for all logs -->
+        <RollingFile name="RollingFile"
+                     fileName="logs/Custodial/${sys:logFolder}/${sys:logFileName}.log"
+                     filePattern="logs/Custodial/${sys:logFolder}/${sys:logFileName}-%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <!-- Rollover based on file size -->
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/> <!-- Maximum number of backup files -->
+        </RollingFile>
+        
+        <!-- Appender for error logs -->
+        <RollingFile name="ErrorAppender"
+                     fileName="logs/Custodial/${sys:logFolder}/error/${sys:logFileName}.log"
+                     filePattern="logs/Custodial/${sys:logFolder}/error/${sys:logFileName}-%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Filters>
+                <!-- Filter to only accept ERROR level logs -->
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <Policies>
+                <!-- Rollover based on file size -->
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/> <!-- Maximum number of backup files -->
+        </RollingFile>
+    </Appenders>
+    
+    <Loggers>
+        <!-- Root logger for all logs -->
+        <Root level="trace">
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+        
+        <!-- Logger for error logs -->
+        <Logger name="your.package.name" level="error" additivity="false">
+            <AppenderRef ref="ErrorAppender"/>
+        </Logger>
+    </Loggers>
+</Configuration>
