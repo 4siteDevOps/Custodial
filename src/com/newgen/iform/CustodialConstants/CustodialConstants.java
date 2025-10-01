@@ -24,11 +24,19 @@ public final class CustodialConstants {
 	public static final String ADD_HISTORY = "ADD_HISTORY";
 
 
+	//T24 IP and Port Keys
+	public static final String T24_IPKEY = "T24_IP";
+	public static final String T24_PORTKEY = "T24_PORT";
+
 	//Work Step
 	public static final String INITIATION_WRKSTEPNAME = "Initiate";
 	public static final String INPUTTER_WRKSTEPNAME = "Custodial Inputter";
 	public static final String DOCS_PENDING_WRKSTEPNAME = "Docs Pending";
 	public static final String AUTHORIZER_WRKSTEPNAME = "Custodial Authorizer";
+
+	//Parent Tab Name
+	public static final String PARENT_TAB_NAME = "tab2";
+
 
 	//Control Sets
 	public static final String DISABLE_ALL = "DisableAll";//Disable All the Fields.
@@ -36,10 +44,24 @@ public final class CustodialConstants {
 	public static final String INPUTTER_ENABLE = "InputterEnable";
 	public static final String DOCSPENDING_ENABLE = "DocsPendingEnable";
 	public static final String AUTHORIZER_ENABLE = "AuthorizerEnable";
-
-	//add History        
-
+	
+	//field type
+	
+	
+    //add History        
+	
 	public static final String ADD_HISTORY_Q_DECISIONHISTORY = "Q_DecisionHistory";
+
+
+
+
+	//Dropdowns
+	public static final String SEGMENT[] = {"", "Personal Banking", "Business Banking"};
+
+
+	//Q_Details List Column Details
+	public static final String HEADERS[] = {"textbox1345", "textbox1346", "textbox1347","textbox1348"};
+	public static final String TAB_APPLICATIONDETAILS[] = {"workItemId", "Loggedindate", "Loggedinuser","Branch"};
 
 
 }
